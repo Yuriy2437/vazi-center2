@@ -4,10 +4,19 @@ import { useState } from 'react';
 import QuestionSection from '../../components/QuestionSection';
 import PageLayout from '../../components/PageLayout';
 import { useAdminStatus } from '../../hooks/useAdminStatus';
+import PhotoGallery from '../../components/PhotoGallery';
+import PhotoButtons from '../../components/PhotoButtons';
 import styles from '../../styles/CommonPage.module.css';
 
 const LectoriumPage = () => {
+  const [showPhoto, setShowPhoto] = useState(false);
   const isAdmin = useAdminStatus();
+
+  const photos = [
+    '/images/photo_8.jpg',
+    '/images/photo_9.jpg',
+    '/images/photo_21.jpg',
+  ];
 
   const leftContent = (
     <>
@@ -20,11 +29,13 @@ const LectoriumPage = () => {
         discussion-oriented environment. The primary goal of these sessions is
         to promote the intellectual growth and development of participants.
       </p>
+      <PhotoButtons setShowPhoto={setShowPhoto} />
     </>
   );
 
   const rightContent = (
     <>
+      {showPhoto && <PhotoGallery photos={photos} />}
       <QuestionSection
         apiEndpoint='/api/lectorium/questions'
         title='Questions about Lectorium'

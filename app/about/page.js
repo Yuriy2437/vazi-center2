@@ -4,10 +4,19 @@ import { useState } from 'react';
 import QuestionSection from '../../components/QuestionSection';
 import PageLayout from '../../components/PageLayout';
 import { useAdminStatus } from '../../hooks/useAdminStatus';
+import PhotoGallery from '../../components/PhotoGallery';
+import PhotoButtons from '../../components/PhotoButtons';
 import styles from '../../styles/CommonPage.module.css';
 
 const AboutPage = () => {
+  const [showPhoto, setShowPhoto] = useState(false);
   const isAdmin = useAdminStatus();
+
+  const photos = [
+    '/images/photo_13.jpg',
+    '/images/photo_19.jpg',
+    '/images/photo_4.jpg',
+  ];
 
   const leftContent = (
     <>
@@ -18,12 +27,14 @@ const AboutPage = () => {
         psychologist. If you have children, we have a playroom carefully watched
         by an adult. You are also welcome to enjoy a complementary cup of coffee
         or tea while here.
-      </p>     
+      </p>
+      <PhotoButtons setShowPhoto={setShowPhoto} />
     </>
   );
 
   const rightContent = (
     <>
+      {showPhoto && <PhotoGallery photos={photos} />}
       <QuestionSection
         apiEndpoint='/api/about/questions'
         title='Questions about Vazi Center'

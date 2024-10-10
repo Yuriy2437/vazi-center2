@@ -2,12 +2,21 @@
 
 import { useState } from 'react';
 import QuestionSection from '../../components/QuestionSection';
+import PhotoGallery from '../../components/PhotoGallery';
+import PhotoButtons from '../../components/PhotoButtons';
 import PageLayout from '../../components/PageLayout';
 import { useAdminStatus } from '../../hooks/useAdminStatus';
 import styles from '../../styles/CommonPage.module.css';
 
 const MusicClubPage = () => {
+  const [showPhoto, setShowPhoto] = useState(false);
   const isAdmin = useAdminStatus();
+
+  const photos = [
+    '/images/photo_6.jpg',
+    '/images/photo_14.jpg',
+    '/images/photo_16.jpg',
+  ];
 
   const leftContent = (
     <>
@@ -20,11 +29,13 @@ const MusicClubPage = () => {
         any other. You can also suggest a specific musical style to shape the
         event.
       </p>
+      <PhotoButtons setShowPhoto={setShowPhoto} />
     </>
   );
 
   const rightContent = (
     <>
+      {showPhoto && <PhotoGallery photos={photos} />}
       <QuestionSection
         apiEndpoint='/api/music_club/questions'
         title='Questions about Music Club'

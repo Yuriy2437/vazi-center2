@@ -4,10 +4,19 @@ import { useState } from 'react';
 import QuestionSection from '../../components/QuestionSection';
 import PageLayout from '../../components/PageLayout';
 import { useAdminStatus } from '../../hooks/useAdminStatus';
+import PhotoGallery from '../../components/PhotoGallery';
+import PhotoButtons from '../../components/PhotoButtons';
 import styles from '../../styles/CommonPage.module.css';
 
 const EnglishClubPage = () => {
+  const [showPhoto, setShowPhoto] = useState(false);
   const isAdmin = useAdminStatus();
+
+  const photos = [
+    '/images/photo_15.jpg',
+    '/images/photo_17.jpg',
+    '/images/photo_18.jpg',
+  ];
 
   const leftContent = (
     <>
@@ -21,11 +30,13 @@ const EnglishClubPage = () => {
         Sequence of Tenses, from the Passive voice to Reported speech, from
         speaking to analyzing songs and movies.
       </p>
+      <PhotoButtons setShowPhoto={setShowPhoto} />
     </>
   );
 
   const rightContent = (
     <>
+      {showPhoto && <PhotoGallery photos={photos} />}
       <QuestionSection
         apiEndpoint='/api/english_club/questions'
         title='Questions about English Club'
