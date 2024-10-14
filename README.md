@@ -1,3 +1,5 @@
+https://vazi-center2-k6b01m7w8-yuriys-projects-5691ba93.vercel.app/
+
 This website is made for Vazi Center, a developing cultural space in Tbilisi, Georgia.
 
 The website is made using the following programs:
@@ -15,7 +17,7 @@ https://github.com/Yuriy2437/vazi-center2
 
 Website Structure:
 
-1. https://vazi-center2-canxgbbxs-yuriys-projects-5691ba93.vercel.app/
+1. https://vazi-center2-k6b01m7w8-yuriys-projects-5691ba93.vercel.app/
 
 This is the title page. It contains a greeting and two buttons: Entrance for Admin & Entrance for all.
 For Entrance for Admin: Login = Yuriy2437, Password = Luther13579246!
@@ -31,8 +33,8 @@ styles\Home.module.css
 store.js
 public\images\background.jpg
 
-2. https://vazi-center2-canxgbbxs-yuriys-projects-5691ba93.vercel.app/menu?admin=true
-   https://vazi-center2-canxgbbxs-yuriys-projects-5691ba93.vercel.app/menu?
+2. https://vazi-center2-k6b01m7w8-yuriys-projects-5691ba93.vercel.app/menu?admin=true
+   https://vazi-center2-k6b01m7w8-yuriys-projects-5691ba93.vercel.app/menu?
 
 This is Menu Page. It contains references on all pages of menu into the left section and photo image in the right section.
 
@@ -43,7 +45,7 @@ styles\Menu.module.css
 components\MainMenuWrapper.js
 public\images\page2.jpeg
 
-3. https://vazi-center2-canxgbbxs-yuriys-projects-5691ba93.vercel.app/about
+3. https://vazi-center2-k6b01m7w8-yuriys-projects-5691ba93.vercel.app/about
 
 This is About Us Page. It contains the top orange menu that appears on all subsequent pages except the Feedback page. This menu contains links to other pages.
 
@@ -83,7 +85,7 @@ public\images\photo_4.jpg
 app\api\about\questions\route.js
 app\api\about\questions\[id]\route.js
 
-4. https://vazi-center2-canxgbbxs-yuriys-projects-5691ba93.vercel.app/english_club
+4. https://vazi-center2-k6b01m7w8-yuriys-projects-5691ba93.vercel.app/english_club
 
 These files are unique for page 4:
 
@@ -94,7 +96,7 @@ public\images\photo_18.jpg
 app\api\english_club\questions\route.js
 app\api\english_club\questions\[id]\route.js
 
-5. https://vazi-center2-canxgbbxs-yuriys-projects-5691ba93.vercel.app/lectorium
+5. https://vazi-center2-k6b01m7w8-yuriys-projects-5691ba93.vercel.app/lectorium
 
 These files are unique for page 5:
 
@@ -105,7 +107,7 @@ public\images\photo_21.jpg
 app\api\lectorium\questions\route.js
 app\api\lectorium\questions\[id]\route.js
 
-6. https://vazi-center2-canxgbbxs-yuriys-projects-5691ba93.vercel.app/music_club
+6. https://vazi-center2-k6b01m7w8-yuriys-projects-5691ba93.vercel.app/music_club
 
 These files are unique for page 6:
 
@@ -116,7 +118,7 @@ public\images\photo_16.jpg
 app\api\music_club\questions\route.js
 app\api\music_club\questions\[id]\route.js
 
-7. https://vazi-center2-canxgbbxs-yuriys-projects-5691ba93.vercel.app/psychology_club
+7. https://vazi-center2-k6b01m7w8-yuriys-projects-5691ba93.vercel.app/psychology_club
 
 These files are unique for page 7:
 
@@ -127,7 +129,7 @@ public\images\photo_20.jpg
 app\api\psychology_club\questions\route.js
 app\api\psychology_club\questions\[id]\route.js
 
-8. https://vazi-center2-canxgbbxs-yuriys-projects-5691ba93.vercel.app/kids_club
+8. https://vazi-center2-k6b01m7w8-yuriys-projects-5691ba93.vercel.app/kids_club
 
 These files are unique for page 8:
 
@@ -138,7 +140,7 @@ public\images\photo_23.jpg
 app\api\kids_club\questions\route.js
 app\api\kids_club\questions\[id]\route.js
 
-9. https://vazi-center2-canxgbbxs-yuriys-projects-5691ba93.vercel.app/feedback
+9. https://vazi-center2-k6b01m7w8-yuriys-projects-5691ba93.vercel.app/feedback
 
 This page collects data from reviews on pages 3-8. It displays questions collected from all MongoDB databases in a single interface on the right side. On the left side of the page, there is a filter that allows you to search for words and parts of words in all databases. The purpose of the filter is to find out the most popular topics for site visitors. The dynamics of this page's data are implemented using Redux. There is also a Delete button for each entry from all databases. When clicked, the entry is deleted both from the interface and from the corresponding MongoDB database.
 
