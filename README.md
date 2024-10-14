@@ -1,11 +1,14 @@
 https://vazi-center2-k6b01m7w8-yuriys-projects-5691ba93.vercel.app/
 
+Entrance for Admin: Login = Yuriy2437 Password = Luther13579246!
+
 This website is made for Vazi Center, a developing cultural space in Tbilisi, Georgia.
 
 The website is made using the following programs:
 
 - React;
 - Next.js;
+- CSS
 - Redux;
 - MongoDB;
 - GitHub;
