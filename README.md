@@ -1,4 +1,4 @@
-https://vazi-center2-k6b01m7w8-yuriys-projects-5691ba93.vercel.app/
+https://vazi-center2.vercel.app/
 
 Entrance for Admin: Login = Yuriy2437 Password = Luther13579246!
 
@@ -45,7 +45,6 @@ Files for this page:
 
 app\menu\page.js
 styles\Menu.module.css
-components\MainMenuWrapper.js
 public\images\page2.jpeg
 
 3. https://vazi-center2-k6b01m7w8-yuriys-projects-5691ba93.vercel.app/about
