@@ -1,3 +1,5 @@
+THIS IS A DEMO AND TEST VERSION OF THE VAZI CENTER WEBSITE
+
 https://vazi-center2.vercel.app/
 
 Entrance for Admin: Login = Yuriy2437 Password = Luther13579246!
