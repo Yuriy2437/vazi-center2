@@ -32,11 +32,11 @@ Entrance for all deactivates these buttons.
 
 Files for this page:
 
-app\page.js
-styles\globals.css
-styles\Home.module.css
-store.js
-public\images\background.jpg
+- app\page.js
+- styles\globals.css
+- styles\Home.module.css
+- store.js
+- public\images\background.jpg
 
 2. https://vazi-center2.vercel.app/menu?admin=true
    https://vazi-center2.vercel.app/menu?
@@ -45,9 +45,9 @@ This is Menu Page. It contains references on all pages of menu into the left sec
 
 Files for this page:
 
-app\menu\page.js
-styles\Menu.module.css
-public\images\page2.jpeg
+- app\menu\page.js
+- styles\Menu.module.css
+- public\images\page2.jpeg
 
 3. https://vazi-center2.vercel.app/about
 
@@ -61,88 +61,88 @@ Since the structure of pages 3-8 is similar, we will split the files into those 
 
 These files are common for pages 3-8:
 
-app\layout.js
-app\ClientLayout.js
-components\MainMenu.js
-styles\MainMenu.module.css
-components\MainMenuWrapper.js
-hooks\useQuestion.js
-hooks\useAdminStatus.js
-components\PageLayout.js
-styles\CommonPage.module.css
-components\QuestionSection.js
-styles\QuestionSection.module.css
-components\PhotoGallery.js
-components\PhotoButton.js
-styles\PhotoGallery.module.css
-.env.local
-lib\momgodb.js
-lib\api-handlers.js
-lib\api2-handlers.js
+- app\layout.js
+- app\ClientLayout.js
+- components\MainMenu.js
+- styles\MainMenu.module.css
+- components\MainMenuWrapper.js
+- hooks\useQuestion.js
+- hooks\useAdminStatus.js
+- components\PageLayout.js
+- styles\CommonPage.module.css
+- components\QuestionSection.js
+- styles\QuestionSection.module.css
+- components\PhotoGallery.js
+- components\PhotoButton.js
+- styles\PhotoGallery.module.css
+- .env.local
+- lib\momgodb.js
+- lib\api-handlers.js
+- lib\api2-handlers.js
 
 These files are unique for page 3:
 
-app\about\page.js
-public\images\photo_13.jpg
-public\images\photo_19.jpg
-public\images\photo_4.jpg
-app\api\about\questions\route.js
-app\api\about\questions\[id]\route.js
+- app\about\page.js
+- public\images\photo_13.jpg
+- public\images\photo_19.jpg
+- public\images\photo_4.jpg
+- app\api\about\questions\route.js
+- app\api\about\questions\[id]\route.js
 
 4. https://vazi-center2.vercel.app/english_club
 
 These files are unique for page 4:
 
-app\english_club\page.js
-public\images\photo_15.jpg
-public\images\photo_17.jpg
-public\images\photo_18.jpg
-app\api\english_club\questions\route.js
-app\api\english_club\questions\[id]\route.js
+- app\english_club\page.js
+- public\images\photo_15.jpg
+- public\images\photo_17.jpg
+- public\images\photo_18.jpg
+- app\api\english_club\questions\route.js
+- app\api\english_club\questions\[id]\route.js
 
 5. https://vazi-center2.vercel.app/lectorium
 
 These files are unique for page 5:
 
-app\lectorium\page.js
-public\images\photo_8.jpg
-public\images\photo_9.jpg
-public\images\photo_21.jpg
-app\api\lectorium\questions\route.js
-app\api\lectorium\questions\[id]\route.js
+- app\lectorium\page.js
+- public\images\photo_8.jpg
+- public\images\photo_9.jpg
+- public\images\photo_21.jpg
+- app\api\lectorium\questions\route.js
+- app\api\lectorium\questions\[id]\route.js
 
 6. https://vazi-center2.vercel.app/music_club
 
 These files are unique for page 6:
 
-app\music_club\page.js
-public\images\photo_6.jpg
-public\images\photo_14.jpg
-public\images\photo_16.jpg
-app\api\music_club\questions\route.js
-app\api\music_club\questions\[id]\route.js
+- app\music_club\page.js
+- public\images\photo_6.jpg
+- public\images\photo_14.jpg
+- public\images\photo_16.jpg
+- app\api\music_club\questions\route.js
+- app\api\music_club\questions\[id]\route.js
 
 7. https://vazi-center2.vercel.app/psychology_club
 
 These files are unique for page 7:
 
-app\psychology_club\page.js
-public\images\photo_10.jpg
-public\images\photo_22.jpg
-public\images\photo_20.jpg
-app\api\psychology_club\questions\route.js
-app\api\psychology_club\questions\[id]\route.js
+- app\psychology_club\page.js
+- public\images\photo_10.jpg
+- public\images\photo_22.jpg
+- public\images\photo_20.jpg
+- app\api\psychology_club\questions\route.js
+- app\api\psychology_club\questions\[id]\route.js
 
 8. https://vazi-center2.vercel.app/kids_club
 
 These files are unique for page 8:
 
-app\kids_club\page.js
-public\images\photo_2.jpg
-public\images\photo_7.jpg
-public\images\photo_23.jpg
-app\api\kids_club\questions\route.js
-app\api\kids_club\questions\[id]\route.js
+- app\kids_club\page.js
+- public\images\photo_2.jpg
+- public\images\photo_7.jpg
+- public\images\photo_23.jpg
+- app\api\kids_club\questions\route.js
+- app\api\kids_club\questions\[id]\route.js
 
 9. https://vazi-center2.vercel.app/feedback
 
@@ -150,6 +150,6 @@ This page collects data from reviews on pages 3-8. It displays questions collect
 
 These files are unique for page 9:
 
-app\feedback\page.js
-styles\Feedback.module.css
-reducers\feedbackReducer.js
+- app\feedback\page.js
+- styles\Feedback.module.css
+- reducers\feedbackReducer.js
