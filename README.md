@@ -153,3 +153,4 @@ These files are unique for page 9:
 - app\feedback\page.js
 - styles\Feedback.module.css
 - reducers\feedbackReducer.js
+- store.js
