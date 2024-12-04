@@ -10,7 +10,7 @@ const menuItems = [
   { name: 'Lectorium', path: '/lectorium' },
   { name: 'Music Club', path: '/music_club' },
   { name: 'Psychology Club', path: '/psychology_club' },
-  { name: 'Kids room', path: '/kids_room' },
+  { name: 'Kids Club', path: '/kids_club' },
   { name: 'All feedbacks', path: '/feedback' },
 ];
 
