@@ -76,7 +76,7 @@ These files are common for pages 3-8:
 - components\PhotoButton.js
 - styles\PhotoGallery.module.css
 - .env.local
-- lib\momgodb.js
+- lib\mongodb.js
 - lib\api-handlers.js
 - lib\api2-handlers.js
 
