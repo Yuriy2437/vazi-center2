@@ -68,3 +68,26 @@
 .highlight {
   background-color: pink;
 }
+
+@media (max-width: 600px) {
+  .rightSection,
+  .leftSection,
+  .deleteButton {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .rightSection,
+  .leftSection,
+  .deleteButton {
+    font-size: 7px;
+  }
+}
+@media (max-width: 385px) {
+  .rightSection,
+  .leftSection,
+  .deleteButton {
+    font-size: 5px;
+  }
+}

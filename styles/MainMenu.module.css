@@ -15,7 +15,7 @@
 }
 
 .mainMenu li {
-  display: inline;
+  display: flex;
 }
 
 .mainMenu a {
@@ -29,4 +29,28 @@
 .mainMenu a:hover {
   background-color: lightblue;
   color: black;
+}
+
+@media (max-width: 580px) {
+  .mainMenu a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 470px) {
+  .mainMenu a {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 412px) {
+  .mainMenu a {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 350px) {
+  .mainMenu a {
+    font-size: 4px;
+  }
 }

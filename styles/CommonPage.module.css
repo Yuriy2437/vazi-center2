@@ -71,25 +71,36 @@
   right: 20px;
 }
 
-/* Мобильная версия */
-@media (max-width: 768px) {
-  .questionsHeader span,
-  .questionItem span {
-    flex: 1;
-  }
-}
-
-/* Десктопная версия */
-@media (min-width: 769px) {
-  .questionsHeader span:nth-child(1),
-  .questionsHeader span:nth-child(2),
-  .questionItem span:nth-child(1),
-  .questionItem span:nth-child(2) {
-    flex: 1;
+@media (max-width: 900px) {
+  .pageContainer {
+    flex-direction: column;
+    height: auto;
   }
 
-  .questionsHeader span:nth-child(3),
-  .questionItem span:nth-child(3) {
-    flex: 2;
+  .leftSection {
+    width: 91, 5%;
+    margin-top: 30px;
+  }
+
+  .buttonContainer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .rightSection {
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem 0;
+    order: 2;
+  }
+
+  .rightSection .inputSection {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .rightSection .listSection {
+    width: 100%;
   }
 }
