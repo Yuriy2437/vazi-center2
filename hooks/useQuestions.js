@@ -6,10 +6,6 @@ const useQuestions = (apiEndpoint) => {
   const [question, setQuestion] = useState('');
   const [questions, setQuestions] = useState([]);
 
-  useEffect(() => {
-    fetchQuestions();
-  }, [fetchQuestions]);
-
   const fetchQuestions = useCallback(async () => {
     try {
       const response = await fetch(apiEndpoint);
@@ -22,6 +18,10 @@ const useQuestions = (apiEndpoint) => {
       console.error('Error fetching questions:', error);
     }
   }, [apiEndpoint]);
+
+  useEffect(() => {
+    fetchQuestions();
+  }, [fetchQuestions]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

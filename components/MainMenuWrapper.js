@@ -2,31 +2,18 @@
 
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import dynamic from 'next/dynamic';
 import MainMenu from './MainMenu';
-import MobileMenu from './MobileMenu';
 
-// const MainMenuWrapper = () => {
-//   const pathname = usePathname();
-//   const showMenu = pathname !== '/' && pathname !== '/menu';
-
-//   if (!showMenu) {
-//     return null;
-//   }
-
-//   return <MainMenu />;
-// };
-
-// export default MainMenuWrapper;
+const MobileMenu = dynamic(() => import('./MobileMenu'), { ssr: false });
 
 const MainMenuWrapper = () => {
   const pathname = usePathname();
   const [showMainMenu, setShowMainMenu] = useState(true);
-
-  const checkScreenWidth = () => {
-    setShowMainMenu(window.innerWidth >= 800);
-  };
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
     checkScreenWidth();
     window.addEventListener('resize', checkScreenWidth);
     return () => {
@@ -34,9 +21,15 @@ const MainMenuWrapper = () => {
     };
   }, []);
 
+  const checkScreenWidth = () => {
+    if (typeof window !== 'undefined') {
+      setShowMainMenu(window.innerWidth >= 800);
+    }
+  };
+
   const showMenu = pathname !== '/' && pathname !== '/menu';
 
-  if (!showMenu) {
+  if (!isMounted || !showMenu) {
     return null;
   }
 

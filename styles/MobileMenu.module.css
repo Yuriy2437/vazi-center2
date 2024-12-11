@@ -1,40 +1,53 @@
 @media (max-width: 800px) {
-  .menu-button {
+  .menuButton {
     width: 100%;
+    position: fixed; /* Добавлено для фиксированного позиционирования */
     top: 0;
     left: 0;
     background-color: orange;
     color: white;
     border: none;
-    border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     z-index: 1000;
   }
 
-  .menu-modal {
+  .menuModal {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: blue;
-    color: yellow;
+    background-color: blue; /* Цвет фона модального окна */
+    color: yellow; /* Цвет текста */
     padding: 20px;
     border-radius: 10px;
-    display: none;
+    display: flex;
     flex-direction: column;
     z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
   }
 
-  .menu-modal.show {
-    display: flex;
+  .menuModal.show {
+    opacity: 1;
+    pointer-events: auto;
   }
 
-  .menu-modal a {
-    color: yellow;
+  .menuModal a {
+    color: yellow; /* Цвет ссылок */
     text-decoration: none;
     margin: 10px 0;
     font-size: 18px;
+  }
+
+  .closeButton {
+    margin-top: 20px;
+    background-color: red; /* Цвет кнопки закрытия */
+    color: white; /* Цвет текста кнопки закрытия */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
   }
 }
