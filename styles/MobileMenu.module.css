@@ -1,0 +1,40 @@
+@media (max-width: 800px) {
+  .menu-button {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .menu-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    color: yellow;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    z-index: 2000;
+  }
+
+  .menu-modal.show {
+    display: flex;
+  }
+
+  .menu-modal a {
+    color: yellow;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+}

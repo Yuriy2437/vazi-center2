@@ -4,6 +4,10 @@
   height: 100%;
 }
 
+.questionSectionTitle {
+  text-align: center;
+}
+
 .inputContainer {
   display: flex;
   gap: 10px;

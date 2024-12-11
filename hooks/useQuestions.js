@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 const useQuestions = (apiEndpoint) => {
   const [name, setName] = useState('');
@@ -8,9 +8,9 @@ const useQuestions = (apiEndpoint) => {
 
   useEffect(() => {
     fetchQuestions();
-  }, []);
+  }, [fetchQuestions]);
 
-  const fetchQuestions = async () => {
+  const fetchQuestions = useCallback(async () => {
     try {
       const response = await fetch(apiEndpoint);
       if (!response.ok) {
@@ -21,7 +21,7 @@ const useQuestions = (apiEndpoint) => {
     } catch (error) {
       console.error('Error fetching questions:', error);
     }
-  };
+  }, [apiEndpoint]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
